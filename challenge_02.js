@@ -22,9 +22,9 @@ let name = prompt("Wie heißt die Person, \ndie etwas trinken möchte?");
 let age = parseInt(prompt("Wie alt ist Person die etwas trinken möchte?"));
 
 switch (true) {
-    //case (age > 18):    
-        //console.log(name + " trinkt Wein");
-        //break;
+    case (age > 18):    
+        console.log(name + " trinkt Wein");
+        break;
     case (age >= 13 && age <= 17):
         console.log(name + " trinkt Cola");
         break;
@@ -36,7 +36,7 @@ switch (true) {
         break;
 
     default:
-        console.log(name + " trinkt Wein")
+        console.log("kein Alter, kein Getränk!")
         break;
 }
 
