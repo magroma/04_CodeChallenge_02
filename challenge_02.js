@@ -1,8 +1,8 @@
 /*********   CODE CHALLENGE 02 **********/
 
 /*
-Geben über eine Prompt-Anforderung einen Namen ein
-Geben über eine Prompt-Anforderung ein Alter ein
+Geben Sie über eine Prompt-Anforderung einen Namen ein
+Geben Sie über eine Prompt-Anforderung ein Alter ein
 
 Geben Sie in Abhängigkeit vom angegebenen Alter 
 folgende Getränkeauswahl in die Konsole aus aus :
@@ -15,3 +15,47 @@ Alter 13-17 // Cola
 */
 
 /* Getränke-Challenge */
+
+/********** Switch|Case ***********/
+
+let name = prompt("Wie heißt die Person, \ndie etwas trinken möchte?");
+let age = parseInt(prompt("Wie alt ist Person die etwas trinken möchte?"));
+
+switch (true) {
+    //case (age > 18):    
+        //console.log(name + " trinkt Wein");
+        //break;
+    case (age >= 13 && age <= 17):
+        console.log(name + " trinkt Cola");
+        break;
+    case (age >= 6 && age <= 12):
+        console.log(name + " trinkt Saft");
+        break;
+    case (age >= 0 && age <= 5):
+        console.log(name + " trinkt Milch");
+        break;
+
+    default:
+        console.log(name + " trinkt Wein")
+        break;
+}
+
+
+/*********** IF ELSE *************/
+/*
+let name = prompt("Wie heißt die Person, \ndie etwas trinken möchte?");
+let age = parseInt(prompt("Wie alt ist Person die etwas trinken möchte?"));
+
+if (age >= 0 && age <=5) 
+{
+    console.log(name + " trinkt Milch");
+} else if (age >= 6 && age <=12) 
+{
+    console.log(name + " trinkt Saft");
+} else if (age >= 13 && age <=17) 
+{
+    console.log(name + " trinkt Cola")
+} else {
+    console.log(name + " trinkt Wein")
+}
+*/
